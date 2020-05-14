@@ -15,7 +15,7 @@ app = Flask(__name__)
 playstore = pd.read_csv('data/googleplaystore.csv')
 
 # Hapus data yang duplikat berdasarkan kolom App, dengan tetap keep data pertama (hint : gunakan parameter subset)
- playstore.drop_duplicates(subset=['App'],keep='first')
+playstore.drop_duplicates(subset=['App'],keep='first', inplace=True)
 
 # bagian ini untuk menghapus row 10472 karena nilai data tersebut tidak tersimpan pada kolom yang benar
 playstore.drop([10472], inplace=True)
@@ -42,7 +42,9 @@ playstore['Price'] = playstore['Price'].apply(lambda x: x.replace('$',''))
 playstore['Price'] = playstore['Price'].astype('float')
 
 # Ubah tipe data Reviews, Size, Installs ke dalam tipe data integer
-___________________________________________________________________________________
+playstore['Installs'] = playstore['Installs'].astype('int')
+playstore['Reviews'] = playstore['Reviews'].astype('int')
+playstore['Size'] = playstore['Size'].astype('int')
 
 @app.route("/")
 
