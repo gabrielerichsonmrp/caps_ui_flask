@@ -68,5 +68,5 @@ playstore.Installs = ________.apply(lambda x: x.replace(______))
 
 *Notes : Anda dapat melihat contoh plot lain yang hraus dibuat/diduplikat pada repositori ini. Silahkan clone/download repositori ini. 
 
-### 5. Build Flask App (4 poin)
+### 5. Build Flask App
 Mengacu pada poin ke empat Data Visualization di atas, selain membuat plot baru Anda harus mendemonstrasikan bagaimana cara merender plot tersebut pada aplikasi Flask dan menampilkannya pada templates / halaman html.
