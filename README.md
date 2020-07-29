@@ -56,11 +56,11 @@ playstore.Category = playstore.Category.astype('category')
 playstore.Installs = ________.apply(lambda x: x.replace(______))
 playstore.Installs = ________.apply(lambda x: x.replace(______))
 ```
-### 3. Data Wrangling (4 poin)
+### 3. Data Wrangling 
 - Pada tahap ini Anda diminta untuk melakukan grouping dan agregasi data. Data wrangling digunakan untuk menyiapkan data yang tepat sesuai analisis yang diminta. Pada capstone ini terdapat objek dictionary dengan nama `stats` dan Anda diminta untuk melengkapi bagian yang rumpang agar menghasilkan data/nilai yang sesuai. Sebagai gambaran pada objek `stats` terdapat variabel `rev_tablel` dimana Anda harus melakukan grouping dan agregasi data yang digunakan untuk membuat data table seperti di bawah ini:
 <img src="table_rev.PNG" width=400>
 
-### 4. Data Visualization (4 poin)
+### 4. Data Visualization
 - Membuat atau menduplikasi bar plot yang menggambarkan top 5 Category pada Google Playstore
 - Membuat atau menduplikasi scatter plot yang menggambarkan sebaran aplikasi jika dilihat berdasarkan Review, Rating, dan jumlah aplikasi yang terinstall.
 - Membuat atau menduplikasi histogram plot untuk melihat distribusi ukuran aplikasi 
@@ -69,11 +69,4 @@ playstore.Installs = ________.apply(lambda x: x.replace(______))
 *Notes : Anda dapat melihat contoh plot lain yang hraus dibuat/diduplikat pada repositori ini. Silahkan clone/download repositori ini. 
 
 ### 5. Build Flask App (4 poin)
-Mengacu pada poin ke empat Data Visualization di atas, selain membuat plot baru Anda harus mendemonstrasikan bagaimana cara merender plot tersebut pada aplikasi Flask dan menampilkannya pada templates / halaman html. Yang perlu Anda perhatikan adalah pada bagian `app.py`:
-```
-render_templates(__________)
-```
-dan pada `templates/index.html` Anda perlu memanggil source plot.png tempat Anda menyimpan gambar plot tersebut.
-```
-<img src="________________________" height="450" width=500>
-```
+Mengacu pada poin ke empat Data Visualization di atas, selain membuat plot baru Anda harus mendemonstrasikan bagaimana cara merender plot tersebut pada aplikasi Flask dan menampilkannya pada templates / halaman html.
